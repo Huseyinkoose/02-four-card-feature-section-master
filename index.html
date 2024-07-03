@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Four card feature section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+        font-variation-settings: "slnt" 0;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 1400px;
+        padding: 70px 0px;
+      }
+
+      .baslik1 {
+        font-size: 2.4rem;
+        color: rgba(132, 132, 132, 0.895);
+        margin-bottom: 15px;
+      }
+      .baslik2 {
+        font-size: 2.4rem;
+        font-weight: bolder;
+        color: rgb(71, 71, 71);
+        margin-bottom: 20px;
+      }
+
+      .metin {
+        display: inline-block;
+        width: 600px;
+        text-align: center;
+        color: rgba(132, 132, 132, 0.895);
+      }
+      .anabox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+      .box {
+        width: 400px;
+        margin: 0px 20px;
+      }
+
+      .card {
+        padding: 30px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+      .end {
+        align-self: end;
+      }
+
+      .btopy {
+        border-top: solid 5px rgb(38, 184, 200);
+      }
+      .btopk {
+        border-top: solid 5px rgb(200, 38, 38);
+      }
+      .btopt {
+        border-top: solid 5px orange;
+      }
+      .btopm {
+        border-top: solid 5px blue;
+      }
+
+      
+
+        @media screen and (max-width: 700px) {
+          .container{
+            
+            margin: 50px ;
+            align-items: center;
+            
+            
+
+                        
+          }
+          
+          .anabox{
+            
+            flex-direction: column;
+            
+          }
+
+          .uzak{
+            margin-bottom: 45px;
+
+          }
+          .metin{
+
+            width: 450px;
+          }
+      }
+
+    
+
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="baslik1">Reliable, efficient delivery</p>
+      <p class="baslik2">Powered by Technology</p>
+      <p class="metin">
+        Our Artificial Intelligence powered tools use millions of project data
+        points to ensure that your project is successful
+      </p>
+
+      <div class="anabox">
+        <div class="box uzak">
+          <div class="card btopy">
+            <p
+              style="
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: rgb(71, 71, 71);
+              "
+            >
+              Supervisor
+            </p>
+            <p style="margin-bottom: 45px; color: rgba(132, 132, 132, 0.895)">
+              Monitors activity to identify project roadblocks
+            </p>
+            <div class="end">
+              <img src="images/icon-supervisor.svg" alt="Supervisor" />
+            </div>
+          </div>
+        </div>
+        <div class="box uzak">
+          <div class="card btopk" style="margin-bottom: 40px">
+            <p
+              style="
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: rgb(71, 71, 71);
+              "
+            >
+              Team Builder
+            </p>
+            <p style="margin-bottom: 45px; color: rgba(132, 132, 132, 0.895)">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="end">
+              <img src="images/icon-team-builder.svg" alt="icon-team-builder" />
+            </div>
+          </div>
+
+          <div class="card btopt">
+            <p
+              style="
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: rgb(71, 71, 71);
+              "
+            >
+              Karma
+            </p>
+            <p style="margin-bottom: 45px; color: rgba(132, 132, 132, 0.895)">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="end">
+              <img src="images/icon-karma.svg" alt="Karma" />
+            </div>
+          </div>
+        </div>
+        <div class="box">
+          <div class="card btopm">
+            <p
+              style="
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-bottom: 20px;
+                color: rgb(71, 71, 71);
+              "
+            >
+              Calculator
+            </p>
+            <p style="margin-bottom: 45px; color: rgba(132, 132, 132, 0.895)">
+              Uses data from past projects to provide better delivery estimates
+            </p>
+            <div class="end">
+              <img src="images/icon-calculator.svg" alt="Calculator" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Your Name Here</a>.
+      </p>
+    </footer>
+  </body>
+</html>
